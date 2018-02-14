@@ -1,0 +1,150 @@
+[B]Version 2.4.8[/B]
+- Changed all urlresolver imports to resolveurl
+- Changed everything todo with urlresolver to resolveurl
+
+[B]Version 2.4.7[/B]
+- Updated trakt
+- Added a module
+- Removed unneeded imports
+- fixed a sorting issue after scraping
+- Tweaked a few scrapers
+- Edited the debrid module and a few others
+
+[B]Version 2.4.6[/B]
+- Updatded cloudflare
+- Removed a module from the scraper
+- Fixed 2ddl
+- Fixed and resorted for how it orders when prepairing sources
+
+[B]Version 2.4.5[/B]
+- Updated jsonpack
+- fixed a few scrapers
+- Updated and changed around sort order when prepairing links
+- Premiumize api module added
+- Added net module
+- Updated js2py Folder
+
+[B]Version 2.4.4[/B]
+- Added 4k to the quality sort
+- Finished adding all the 4k code to a few files
+- process of changing stuff up with 4k and adding to settings
+
+[B]Version 2.4.3[/B]
+- Fixed SeriesWatch, Mersad, Dlmac Mihanshow and a few other (free ones)
+- Fixed DDLvalley (not showing on some devices)
+- Fixed Scenerls (updated and repaired)
+- Fixed Allrls
+- Fixed Seriesonline and Iwatch
+- Fixed Mehlis
+- Fixed Watch series online
+- Watch free (Fixed in previous update)
+- Renamed a few Index Scrapers
+- Cleared up few bugs
+- Removed some imports
+- Removed a few Files
+- Removed quite a few imports
+
+[B]Version 2.4.2[/B]
+- Scraper fixes
+- Added Fixes to settings and changed few things around
+- Bug Fixes done
+- Redid a Few things
+
+[B]Version 2.4.1[/B]
+- Few scrapers removed
+- Added Episodes watch
+- Added hatihd
+- Fixed dlmac
+- Fixed Rd api
+- Few other scraper fixes
+
+[B]Version 2.3.8[/B]
+- Removed nitertv
+- Removed putmv
+- Removed a few others
+- Added MerSad
+- Added mihanMov
+- Added MihanShow
+- Added DlMac
+- Fixed image scraping
+- Few bugs fixed causing error
+
+[B]Version 2.3.7[/B]
+- Fixed minor bug todo with image cache
+- Updated dom parser in the module
+- Updated jsunfuck
+- Few bug fixes
+- Removed directstream
+
+[B]Version 2.3.6[/B]
+- re added six.py
+- Minor bugs fixed
+- Added directstream and client py
+- OLmovies sorted itself
+- Added parsedom
+- Changed default source window to directory
+- Fixed a few errors in settings
+
+[B]Version 2.3.5[/B]
+- Few more Scrapers fixed
+- A few Debrid scrapers fixed
+- Removed tresureen
+- Minor fix to rlsbb
+
+[B]Version 2.3.4[/B]
+- Minor bug fix due to a scraper
+- Minor fixes to Croatian languages
+- Fixed a few scraper urls
+- Added MkvWatch scraper removed real.
+
+[B]Version 2.3.3[/B]
+- Changed Image Proxy port
+- Added Context Tools
+- Dizilab Repaired
+
+[B]Version 2.3.2[/B]
+-Fixed and repaired a few scrapers
+
+[B]Version 2.3.1[/B]
+- Improved and updated Icon
+- Fixed a few more Issues
+- Added Themes
+- Redid Themes added New Images, Redid the Default Theme
+- Added all New Backgrounds
+- Scrapers Fixed Mehlizmovies, losmovies, pelispedia, mintmovies, ddlvalley, seriesonline
+
+[B]Version 2.3.0[/B]
+- Minor bug fixes
+- cleaned up a more files
+- Removed everything todo with TMDB cache
+- Revamped the DS image Thanks Scott
+- Fixed API keys
+
+[B]Version 2.2.6[/B]
+update to resolve the update from smash repo colossus is the main home..
+
+[B]Version 2.2.5[/B]
+Minor bug fixes - cleaned up more files, Removed everything todo with TMDB cache and Revamped the DS image Thanks Scott, Fixed API keys. 
+Please if anyone is interested in helping me with this you can find me on twitter, Credit goes to TKNorris of SALTS!!
+
+[B]Version 2.2.4[/B]
+sorted though files did a few changes cleaned unwanted junk..
+
+[B]Version 2.1.6[/B]
+- Latest version fixed by MR B, Fixed Images Loading Slow, Tweaked a few debrid scrapers Update: Fixed some scrapers not scraping, Fixed a few scraper searches.. 
+Please if anyone is interested in helping me with this feel free, i'll continue working on it !!
+
+[B]Version 2.1.4[/B]
+links repaired
+- couchtuner 
+- pftv 
+- hevcbluray 
+- downloadtube
+- ddlvalley
+- moviexk
+- dizimag
+
+[B]Version 2.0.6[/B]
+Take over addon from TK
+Update translations
+Improve gvideo parsing

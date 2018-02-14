@@ -1,0 +1,13 @@
+<addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.0.7" provider-name="Blamo">
+	<extension point="xbmc.addon.repository" name="Blamos">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/mrblamo/Mr-Blamo-Repo/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/mrblamo/Mr-Blamo-Repo/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/mrblamo/Mr-Blamo-Repo/master/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en">The Official Repo for Blamo</description>
+	</extension>
+</addon>

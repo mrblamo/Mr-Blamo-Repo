@@ -1,0 +1,83 @@
+Placenta Module Changelog:
+Currently maintained by mr blamo and Muad'Dib
+
+ver 1.2.0
+	- Fixed multiple scrapers
+    - Moved more non-working scrapers to to_be_fixed folder
+    - Created some new scrapers
+    - AFDAH removed, too many unreliable links
+    - FilmXY removed, site down too often and unreliable
+
+ver 1.1.9
+    - Log Utils changes
+	- Scraper Updates
+    - Garbage Scrapers removed (Movie4kto, etc)
+
+ver 1.1.8
+    - Changed all urlresolver imports to resolveurl
+	- Changed everything todo with urlresolver to resolveurl
+	
+ver 1.1.7
+    - Scraper fixes
+    - Added missing scrapers to Placenta Settings
+
+ver 1.1.6
+    - trakt updates
+    - jsonunpack updates
+    - Scraper work
+
+ver 1.1.5
+    - TheMovieDB API Updates
+    - Fanart.TV API Updates
+    - New "Clear Meta Cache" option under Tools
+    - New "Clear All Cache" option under Tools
+ 
+ver 1.1.4
+    - Scraper Updates
+ 
+ver 1.1.3
+    - Scraper Updates
+ 
+ver 1.1.2
+    - Reoptimized YT Indexer
+    - Updated IMDB Pagination for multiple scenarios
+    - Recommend Clearing Cache under Tools -> Clear Cache
+ 
+ver 1.1.1
+    - Movie Reviews and Trailers section added
+ 
+ver 1.1.0[
+    - Next Page bug fixed with TV Show section
+    - Adjustment for new sections (Moved menu sources to GIT)
+ 
+ver 1.0.9
+    - New system for the new menu items added
+ 
+ver 1.0.8
+    - Scraper updates - Fixed some, added brand new ones, removed some
+ 
+ver 1.0.7
+    - Scraper updates - Fixed some, added brand new ones, removed some
+    - URL Resolver menu item
+    - Updates to CF Scraper
+ 
+ver 1.0.6
+    - Scraper updates - Huge thanks to the guys doing tests for us
+    - Added code for custom color for Unaired Episodes/Seasons
+ 
+ver 1.0.5
+    - Fixed IMDB Pagination issues plaguing all the other forks
+
+ver 1.0.4
+    - Moving scrapers around (some sites down, moved out so no longer scraping, etc)
+ 
+ver 1.0.3
+    - Fixed IMDB Actor Search
+ 
+ver 1.0.2
+    - Fixed 'TV Shows -> Networks' TV Show Listings
+ 
+ver 1.0.1
+    - Updated a couple Scrapers
+ 
+ 

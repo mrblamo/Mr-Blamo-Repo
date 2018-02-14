@@ -1,0 +1,53 @@
+[B]Version 1.0.7[/B]
+- Changed all urlresolver imports to resolveurl
+- Changed everything todo with urlresolver to resolveurl
+- Added New TVDB & TMDB API Keys
+
+[B]Version 1.0.6[/B]
+- Updated trakt
+- Added a module
+- Removed unneeded imports
+- fixed a sorting issue after scraping
+- Tweaked a few scrapers
+- Edited the debrid module and a few others
+
+[B]Version 1.0.5[/B]
+- Updated trakt
+- Added a module
+- Removed unneeded imports
+- fixed a sorting issue after scraping
+- Tweaked a few scrapers
+- Edited the debrid module and a few others
+
+[B]Version 1.0.4[/B]
+- Updatded cloudflare
+- Removed a module from the scraper
+- Fixed 2ddl
+- Fixed and resorted for how it orders when prepairing sources
+
+[B]Version 1.0.3[/B]
+- Updated jsonpack
+- fixed a few scrapers
+- Updated and changed around sort order when prepairing links
+- Premiumize api module added
+- Updated js2py folder
+
+[B]Version 1.0.2[/B]
+-  finished Added 4k to the quality sort
+- Finished adding all the 4k code
+- process of changing stuff up with 4k and adding it to settings (Max Quality)
+
+[B]Version 1.0.1[/B]
+- Fixed tv Fanart 
+- Added tvdb API to fix few issues
+- Redid the settings to fix some problems 
+- Removed the Artwork folder to make things run a smoother
+- Readded another source
+- Changed proxy to one i feel comfortable with
+
+
+[B]Version 1.0.0[/B]
+- Initial version
+- Added a few Things ive been working on for (Death Streams)
+- Removed unwanted imports and uneeded Files
+- Added a Few imports and changed them up a bit

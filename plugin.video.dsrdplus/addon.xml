@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.dsrdplus" version="1.0.7" name="Death Streams RD" provider-name="Mr.blamo">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.metahandler" version="3.0.2" />
+        <import addon="script.module.pyxbmct" version="1.2.0"/>
+		<import addon="script.deaths.themepak"/>
+        <import addon="script.module.dateutil"/>
+        <import addon="script.module.myconnpy"/>
+		<import addon="script.module.requests" />
+        <import addon="script.module.dsrd"/>
+        <import addon="script.module.six" version="1.9.0"/>
+        <import addon="script.module.resolveurl" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="dsrd.py">
+        <provides>video</provides>
+    </extension>
+        <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream video from many difference sources with Death Streams RD (RealDebrid)</summary>
+        <description>This is the MOD version of Death Streams RealDebrid usage</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, January 2018</license>
+        <news>[B]Version 1.0.0[/B]</news>
+        <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

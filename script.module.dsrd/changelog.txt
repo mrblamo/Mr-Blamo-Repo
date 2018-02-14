@@ -1,0 +1,14 @@
+[B]Version 1.0.2[/B]
+- Changed all urlresolver imports to resolveurl
+- Changed everything todo with urlresolver to resolveurl
+
+[B]Version 1.0.1[/B]
+- Updated Cloudflare
+- Fixed a few bugs that ocurred during test
+
+[B]Version 1.0.0[/B]
+- Initial Release.
+- Dpom parser updated
+- A few other codes added
+- Minor bug fixes
+- dom_parser2 improvements
