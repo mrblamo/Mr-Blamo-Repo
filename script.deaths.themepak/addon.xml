@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.deaths.themepak" version="1.0.4" name="DS Themepak" provider-name="MR Blamo">
+<addon id="script.deaths.themepak" version="1.0.5" name="DS Themepak" provider-name="Mr. Blamo">
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>
     </requires>
@@ -7,6 +7,12 @@
     <extension point="xbmc.addon.metadata">
         <summary>These are Themes for the Death Streams Addon</summary>
         <description>Themes are maintained separately to make distribution of the the addon itself easier and faster credit to k3l3vra for some good themes.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
         <platform>all</platform>
     </extension>
 </addon>

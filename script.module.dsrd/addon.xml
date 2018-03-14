@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.2" provider-name="Mr.Blamo">
+<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.4" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -7,5 +7,11 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Credits -2- TKnorris / Mr. Blamo</summary>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
 	</extension>
 </addon>

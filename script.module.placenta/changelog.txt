@@ -1,8 +1,24 @@
 Placenta Module Changelog:
 Currently maintained by mr blamo and Muad'Dib
 
+ver 1.2.3
+    - Scraper Updates
+    - Updated CFScrape to latest from author
+    - Some garbage scrapers re-added, but disabled by default- Up to you if you want to use them
+
+ver 1.2.2
+    - Fixed some Cache init issues
+    - Added support for Season 0/Specials to Browse Series
+    - Added Documentary section, using TopDocumentaries website
+
+ver 1.2.1
+    - Replaced Fanart.TV Key
+    - Replaced TheMovieDB Key
+    - Added new Navigation Options
+    - Added Podcasts section with 2 site scrapers
+
 ver 1.2.0
-	- Fixed multiple scrapers
+    - Fixed multiple scrapers
     - Moved more non-working scrapers to to_be_fixed folder
     - Created some new scrapers
     - AFDAH removed, too many unreliable links
@@ -10,13 +26,13 @@ ver 1.2.0
 
 ver 1.1.9
     - Log Utils changes
-	- Scraper Updates
+    - Scraper Updates
     - Garbage Scrapers removed (Movie4kto, etc)
 
 ver 1.1.8
     - Changed all urlresolver imports to resolveurl
-	- Changed everything todo with urlresolver to resolveurl
-	
+    - Changed everything todo with urlresolver to resolveurl
+    
 ver 1.1.7
     - Scraper fixes
     - Added missing scrapers to Placenta Settings

@@ -1,3 +1,6 @@
+[B]1.3.7[/B]
+- Changed Disclaimer
+- Changed License
 [B]1.3.6[/B]
 - Changed all urlresolver imports to resolveurl
 - Changed everything todo with urlresolver to resolveurl

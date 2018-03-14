@@ -1,3 +1,7 @@
+[B]Version 1.0.5[/B]
+- Changed Disclaimer
+- Changed License
+
 [B]Version 1.0.4[/B]
 - Fixed the default anticipated icon
 

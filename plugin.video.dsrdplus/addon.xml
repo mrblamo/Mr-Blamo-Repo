@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.dsrdplus" version="1.0.7" name="Death Streams RD" provider-name="Mr.blamo">
+<addon id="plugin.video.dsrdplus" version="1.1.0" name="Death Streams RD" provider-name="Mr Blamo. Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.futures" version="2.2.0"/>
         <import addon="script.module.metahandler" version="3.0.2" />
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
+        <import addon="script.module.pyxbmct" />
 		<import addon="script.deaths.themepak"/>
         <import addon="script.module.dateutil"/>
         <import addon="script.module.myconnpy"/>
@@ -20,9 +20,12 @@
     <extension point="xbmc.addon.metadata">
         <summary>Stream video from many difference sources with Death Streams RD (RealDebrid)</summary>
         <description>This is the MOD version of Death Streams RealDebrid usage</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, January 2018</license>
-        <news>[B]Version 1.0.0[/B]</news>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
         <assets>
           <icon>icon.png</icon>
           <fanart>fanart.jpg</fanart>

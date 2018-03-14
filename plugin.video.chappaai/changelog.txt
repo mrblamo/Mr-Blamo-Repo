@@ -1,0 +1,13 @@
+vG.0.2
+- Fixed a few bugs
+- Replaced few things
+vG.0.1
+- Initial release
+- Fixed a few view modes
+- Fixed some navigation errors
+- Fixed a few errors by removing them
+- Bug fix in Patch all players
+- Added all new TMDB, TVDB, TRAKT, Fanart api keys
+- Added a personal trakt key
+- Fix: crash on empty TVDB data
+- Fix: hardcoded language in scraper settings

@@ -1,3 +1,19 @@
+[B]Version 1.1.0[/B]
+- Added all project scrapers
+- Removed a few dead scrapers
+- Redid some base code
+- Fixed a few bugs
+- Added Tvmaze to the modules
+- Changed around, redid, and added imports
+
+[B]Version 1.0.9[/B]
+- Fixed a few Scrapers
+- Added 2 other Scrapers back
+
+[B]Version 1.0.8[/B]
+- Changed Disclaimer
+- Changed License
+
 [B]Version 1.0.7[/B]
 - Changed all urlresolver imports to resolveurl
 - Changed everything todo with urlresolver to resolveurl

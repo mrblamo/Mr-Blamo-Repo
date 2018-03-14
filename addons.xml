@@ -1,5 +1,5 @@
 <addons>
-<addon id="plugin.video.blamo" version="2.4.8" name="Death Streams" provider-name="Mr.Blamo">
+<addon id="plugin.video.blamo" version="2.5.2" name="Death Streams" provider-name="Mr. Blamo">
     <requires>        
 		<import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -23,19 +23,85 @@
         <description lang="en">This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
         <description lang="hr">Ovaj dodatak koristi trakt.tv za većinu metapodataka filmova i TV serija a koristi različite web stranice za izvore</description>
         <description lang="he">ההרחבה הזו משתמשת ב- trakt.tv עבור רוב נתוני מידע-מטא של הסרטים והסדרות ומשתמשת במגוון אתרי אינטרנט עבור מקורות מארחים</description>
-	<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-	<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadržaj koji je pronađen i nije povezan sa bilo kojim izvorom sadržaja. Ovaj dodatak samo pretražuje sadržaj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
-	<disclaimer lang="he">מחבר ההרחבה הזו אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
 	<platform>all</platform>
 	</extension>
 </addon>
 
-<addon id="plugin.video.dsrdplus" version="1.0.7" name="Death Streams RD" provider-name="Mr.blamo">
+<addon id="plugin.video.chappaai" name="Chappa'ai" version="G.0.2" provider-name="Mr.Blamo">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="[login|startup]">
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>Chappa'ai</label>
+				<item library="context_toggle.py">
+					<label>Preferred toggle</label>
+					<visible>!System.HasAddon(context.chappai) + !Skin.HasSetting(Toggling)</visible>
+				</item>
+				<item library="context_movie.py">
+					<label>$ADDON[plugin.video.chappaai 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,movie) + SubString(ListItem.Path, plugin.video.chappaai)</visible>
+				</item>
+				<item library="context_tvshow.py">
+					<label>$ADDON[plugin.video.chappaai 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.chappaai)</visible>
+				</item>
+				<item library="context_live.py">
+					<label>$ADDON[plugin.video.chappaai 30602]</label>
+					<visible>[SubString(ListItem.FileNameAndPath, plugin.video.chappaai\\Live) | SubString(ListItem.FileNameAndPath, plugin.video.chappaai\\Live)]</visible>
+				</item>
+				<item library="context_playable.py">
+					<label>$ADDON[plugin.video.chappaai 30622]</label>
+					<visible>!System.HasAddon(context.chappaai) + !Skin.HasSetting(Contexting)</visible>
+				</item>
+			</menu>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">TMDb, TVDb, Trakt, AudioDb and LastFM browser</summary>
+		<description lang="en">Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon to try and play it. Needs player-files and the appropriate addon to actually play.</description>
+		<summary lang="nl">Blader door TMDb, TVDb, Trakt, AudioDb en LastFM</summary>
+		<description lang="nl">Blader door The MovieDb, The TVDb, Trakt, The AudioDb en LastFM en geef info door aan de bibliotheek of een addon om te proberen het af te spelen. Vereist player-bestanden en de bijbehorende addon om daadwerkelijk af te kunnen spelen.</description>
+		<supportedcontent>
+			<content>movies</content>
+			<content>tvshows</content>
+			<content>episodes</content>
+			<content>musicvideos</content>
+			<content>music</content>
+			<content>livetv</content>
+		</supportedcontent>
+		<genre>movies,tv,music,livetv</genre>
+		<!--<video_guide>yt-id</video_guide>
+		<video_preview>yt-id</video_preview>-->
+		<forum>http://mrblamo.xyz</forum>
+		<source>/</source>
+		<email>Mrblamo420@gmail.com</email>
+		<news>Fixed duration error on non-default version of kodi</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.dsrdplus" version="1.1.0" name="Death Streams RD" provider-name="Mr Blamo. Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.futures" version="2.2.0"/>
         <import addon="script.module.metahandler" version="3.0.2" />
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
+        <import addon="script.module.pyxbmct" />
 		<import addon="script.deaths.themepak"/>
         <import addon="script.module.dateutil"/>
         <import addon="script.module.myconnpy"/>
@@ -51,9 +117,12 @@
     <extension point="xbmc.addon.metadata">
         <summary>Stream video from many difference sources with Death Streams RD (RealDebrid)</summary>
         <description>This is the MOD version of Death Streams RealDebrid usage</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, January 2018</license>
-        <news>[B]Version 1.0.0[/B]</news>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
         <assets>
           <icon>icon.png</icon>
           <fanart>fanart.jpg</fanart>
@@ -61,7 +130,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.neptune" version="1.3.6" name=" Neptune Rising" provider-name="Mr.Blamo">
+<addon id="plugin.video.neptune" version="1.3.9" name=" Neptune Rising" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.neptune.artwork" />
@@ -72,7 +141,7 @@
                 <import addon="script.module.beautifulsoup"/>
                 <import addon="script.module.schism.common"/>
                 <import addon="script.module.futures"/>
-                <import addon="script.module.nanscrapers" version="0.5.47" />
+        		<import addon="script.module.universalscrapers" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="neptune.py">
 		<provides>video</provides>
@@ -81,7 +150,12 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Neptune Rising</summary>
 		<description lang="en">Movie, TV Show, and Playlist Add-on</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
 		<platform>all</platform>
 		<forum></forum>
 		<website></website>
@@ -94,7 +168,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.placenta" version="1.1.6" name="Placenta" provider-name="Team Afterbirth">
+<addon id="plugin.video.placenta" version="1.2.0" name="Placenta" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.placenta" />
@@ -107,10 +181,15 @@
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
+        <provides>audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Placenta</summary>
 		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
 		<platform>all</platform>
 		<license>Beerware rev. 42</license>
 		<assets>
@@ -125,7 +204,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.0.7" provider-name="Blamo">
+<addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="1.0.0" provider-name="Blamo">
 	<extension point="xbmc.addon.repository" name="Blamos">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/mrblamo/Mr-Blamo-Repo/master/addons.xml</info>
@@ -139,7 +218,7 @@
 	</extension>
 </addon>
 
-<addon id="script.deaths.themepak" version="1.0.4" name="DS Themepak" provider-name="MR Blamo">
+<addon id="script.deaths.themepak" version="1.0.5" name="DS Themepak" provider-name="Mr. Blamo">
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>
     </requires>
@@ -147,6 +226,12 @@
     <extension point="xbmc.addon.metadata">
         <summary>These are Themes for the Death Streams Addon</summary>
         <description>Themes are maintained separately to make distribution of the the addon itself easier and faster credit to k3l3vra for some good themes.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
         <platform>all</platform>
     </extension>
 </addon>
@@ -162,7 +247,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.2" provider-name="Mr.Blamo">
+<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.4" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -170,6 +255,12 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Credits -2- TKnorris / Mr. Blamo</summary>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
 	</extension>
 </addon>
 
@@ -199,7 +290,7 @@
         </extension>
 </addon>
 
-<addon id="script.module.placenta" name="Placenta Module" version="1.2.0" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.2.4" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -208,6 +299,10 @@
 		<platform>all</platform>
 		<summary lang="en">Placenta</summary>
 		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
 	</extension>
 </addon>
 
@@ -247,7 +342,33 @@
 	</extension>
 </addon>
 
-<addon id="script.neptune.artwork" version="1.1.1" name="Neptune Rising Artwork" provider-name="Mr.Blamo">
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.0.2" provider-name="Team Universal">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        <import addon="repository.universalscrapers"/>
+	<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+            </description>
+            <license>GPL v3</license>
+            <source>https://</source>
+        </extension>
+</addon>
+
+<addon id="script.neptune.artwork" version="1.1.2" name="Neptune Rising Artwork" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -255,7 +376,12 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Themes for the Neptune Rising Addon</summary>
 		<description>Themes for Neptune Rising are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
 		<platform>all</platform>
+		<license>Beerware rev. 42</license>
 	</extension>
 </addon>
 
@@ -271,19 +397,23 @@
 	</extension>
 </addon>
 
-<addon id="script.placenta.artwork" version="1.0.4" name="Placenta Artwork" provider-name="Team Afterbirth">
+<addon id="script.placenta.artwork" version="1.0.6" name="Placenta Artwork" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<summary>Themes for the Placenta Addon</summary>
-		<description>You are welcome! - Team Afterbirth (mr blamo and Muad'Dib)</description>
+		<description>Artwork Module for the Placenta Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
 		<platform>all</platform>
 	</extension>
 </addon>
 
-<addon id="script.placenta.metadata" version="1.0.0" name="Placenta Metadata" provider-name="Team Afterbirth">
+<addon id="script.placenta.metadata" version="1.0.1" name="Placenta Metadata" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -291,6 +421,10 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Metadata for the Placenta Addon</summary>
 		<description>Metadata for Placenta are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
 		<platform>all</platform>
 	</extension>
 </addon>

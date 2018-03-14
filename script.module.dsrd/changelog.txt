@@ -1,3 +1,12 @@
+[B]Version 1.0.4[/B]
+- Fixed a few errors after tests
+- changed a few imports
+- Minor bug fixes
+
+[B]Version 1.0.3[/B]
+- Changed Disclaimer
+- Changed License
+
 [B]Version 1.0.2[/B]
 - Changed all urlresolver imports to resolveurl
 - Changed everything todo with urlresolver to resolveurl

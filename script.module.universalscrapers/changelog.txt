@@ -1,0 +1,22 @@
+2/26/2018 V 1.0.2
+Chillnflix.py removed
+
+2/25/18 V 1.0.1
+
+updated proxy.py
+extramovies.py update
+bnw.py update
+ydmoviez.py add
+themovietime.py add
+watchfullmovie.py add
+tvmoviestream.py add
+chillinflix.py add
+alluc.py update
+animetoon.py update
+couchtuner.py update
+releasebb.py update
+seriescravings.py update
+mvlinks.py add
+
+V1.0.0 
+birth
